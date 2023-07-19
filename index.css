@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  overflow: hidden;
+}
+.particles-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #00031d, #000535);
+}
+
+#particles-js {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, #00031d, #000535);
+  background-image: url("");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+@keyframes move_wave {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(-25%) translateZ(0) scaleY(0.55);
+  }
+  100% {
+    transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
+
+.waveWrapper {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+
+.waveWrapperInner {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  bottom: -1px;
+}
+
+.bgTop {
+  z-index: 15;
+  opacity: 0.5;
+}
+
+.bgMiddle {
+  z-index: 10;
+  opacity: 0.75;
+}
+
+.bgBottom {
+  z-index: 5;
+}
+
+.wave {
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+
+.waveTop {
+  background-size: 50% 100px;
+}
+
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+  -webkit-animation: move-wave 3s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.waveMiddle {
+  background-size: 50% 120px;
+}
+
+.waveAnimation .waveMiddle {
+  animation: move_wave 10s linear infinite;
+}
+
+.waveBottom {
+  background-size: 50% 100px;
+}
+
+.waveAnimation .waveBottom {
+  animation: move_wave 15s linear infinite;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  margin-left: 15%;
+  margin-right: 500px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  padding: 16;
+  z-index: 99;
+}
+
+.logo img {
+  margin-right: auto; /* Pushes the logo to the left */
+  padding-left: 15%;
+  padding-top: 1%;
+  width: 45px;
+}
+
+.items {
+  margin-left: auto; /* Pushes the list items to the right */
+  padding-right: 29%;
+  font-size: 13px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+}
+
+.items ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 5%;
+}
+
+.items li {
+  margin-left: 15px; /* Adjust spacing between list items */
+}
+
+.items ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 7px;
+  transition: color 0.3s ease;
+}
+
+/* Content Styling */
+.content {
+  background-color: transparent;
+  width: 100%;
+  z-index: 98;
+  color: white;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 160px;
+  padding-left: 15%;
+  gap: 25px;
+}
+
+.info {
+  padding-bottom: 30px;
+  width: 45%;
+}
+
+.text-1 {
+  font-weight: 800;
+  font-size: 50px;
+  padding-bottom: 40px;
+}
+
+.text-2 {
+  font-size: 25px;
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.button-container {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 25px;
+}
+
+.button{
+  margin-right: 15px;
+}
+#right-button {
+  margin-right: auto;
+}
+
+.button {
+  background-color: #1ADB80;
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 18px 35px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.image{
+  width: 50%;
+}
