@@ -5,6 +5,8 @@
   font-family: "Nunito", sans-serif;
   overflow: hidden;
 }
+
+/* Particles Styling */
 .particles-container {
   position: relative;
   width: 100%;
@@ -23,7 +25,9 @@
   background-repeat: no-repeat;
   z-index: 1;
 }
+/* Particles Styling End */
 
+/* Wave Animation Styling */
 @keyframes move_wave {
   0% {
     transform: translateX(0) translateZ(0) scaleY(1);
@@ -104,7 +108,9 @@
 .waveAnimation .waveBottom {
   animation: move_wave 15s linear infinite;
 }
+/* Wave Animation Styling End */
 
+/* Navbar Styling */
 .navbar {
   position: fixed;
   width: 100%;
@@ -157,6 +163,7 @@
 .items ul li a:hover{
   color: #f2f2f4;
 }
+/* Navbar Styling End */
 
 /* Content Styling */
 .content {
@@ -222,3 +229,4 @@
 .image{
   width: 50%;
 }
+/* Content Styling End */
