@@ -5,50 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webd Assignment</title>
     <link rel="stylesheet" href="index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script type="text/javascript">jQuery(document).ready(function($){$(function() {      AOS.init(); });  });  </script>
   </head>
   <body>
     <div class="navbar">
-        <div class="logo">
-            <img src="logo.png" alt="">
-        </div>
+      <div class="logo">
+        <img src="logo.png" alt="" />
+      </div>
 
-        <div class="items">
-            <ul>
-                <li><a href="#">BRANDS</a></li>
-                <li><a href="#">INFLUENCERS</a></li>
-                <li><a href="#">PRICING</a></li> 
-                <li><a href="#">BLOGS</a></li>
-                <li><a href="#">CONTACT </a></li>
-            </ul>
-        </div>
+      <div class="items">
+        <ul>
+          <li><a href="#">BRANDS</a></li>
+          <li><a href="#">INFLUENCERS</a></li>
+          <li><a href="#">PRICING</a></li>
+          <li><a href="#">BLOGS</a></li>
+          <li><a href="#">CONTACT </a></li>
+        </ul>
+      </div>
     </div>
 
     <div class="content">
-        <div class="info">
-            <h1 class="text-1">Discover. Connect.
-                <br>
-                Collaborate.
-            </h1>
-            <p class="text-2">An ecosystem for Sociat media Influencers and Brands.</p>
-            <div class="buttons">
-                <div class="button-container">
-                  <button class="button">I'M AN INFLUENCER</button>
-                  <button class="button" id="right-button">I'M A BRAND</button>
-                </div>
-            </div>
-
+      <div class="info">
+        <h1
+          id="text-1"
+          data-aos="fade-right"
+          data-aos-delay="100"
+          data-aos-easing="ease-in-out-back"
+          data-aos-duration="1200"
+          data-aos-anchor-placement="center-center"
+          data-aos-offset ="100"
+        >
+          Discover. Connect.
+          <br />
+          Collaborate.
+        </h1>
+        <p id="text-2"
+          data-aos="fade-right"
+          data-aos-delay="600"
+          data-aos-easing="ease-in-out-back"
+          data-aos-duration="1200"
+          data-aos-offset ="100"
+        >
+          An ecosystem for Sociat media Influencers and Brands.
+        </p>
+        <div class="buttons"
+        data-aos="fade-up"
+          data-aos-delay="1200"
+          data-aos-easing="ease-in-out-back"
+          data-aos-duration="1200"
+          data-aos-offset ="100"
+        >
+          <div class="button-container">
+            <button class="button">I'M AN INFLUENCER</button>
+            <button class="button" id="right-button">I'M A BRAND</button>
+          </div>
         </div>
+      </div>
 
-        <div class="image">
-            <img src="img1.png" alt="image">
-        </div>
+      <div class="image"
+          data-aos="fade"
+          data-aos-delay="1900"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out-back">
+        <img src="img1.png" alt="image" />
+      </div>
     </div>
 
     <div class="particles-container">
-        <div id="particles-js"></div>
+      <div id="particles-js"></div>
     </div>
 
     <div class="waveWrapper waveAnimation">
@@ -81,8 +112,9 @@
     <script src="particles.js"></script>
     <script src="app.js"></script>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      
+      AOS.init();
     </script>
   </body>
 </html>

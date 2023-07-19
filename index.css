@@ -149,9 +149,13 @@
 
 .items ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #a3a3a7;
   padding: 5px 7px;
   transition: color 0.3s ease;
+}
+
+.items ul li a:hover{
+  color: #f2f2f4;
 }
 
 /* Content Styling */
@@ -174,13 +178,13 @@
   width: 45%;
 }
 
-.text-1 {
+#text-1 {
   font-weight: 800;
   font-size: 50px;
   padding-bottom: 40px;
 }
 
-.text-2 {
+#text-2 {
   font-size: 25px;
 }
 
